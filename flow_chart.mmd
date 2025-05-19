@@ -1,0 +1,43 @@
+flowchart TD
+    A[Detecting Suspicious Activity on Social Media] --> B{Type of Activity?}
+    
+    B -->|Suspicious Message| C[Check for Scam Signals]
+    C --> C1[Check grammar/unusual syntax errors]
+    C1 --> C2[Assess requests for sensitive info]
+    C2 --> C3[Evaluate urgency in message]
+    C3 --> G
+    
+    B -->|Unknown Account| D[Verify Account Credibility]
+    D --> D1[Check follower/following ratio]
+    D1 --> D2[Review account age]
+    D2 --> D3[Verify profile authenticity]
+    D3 --> G
+    
+    B -->|Suspicious Link| E[URL Assessment]
+    E --> E1[Check URL shortening services]
+    E1 --> E2[Verify domain name]
+    E2 --> E3[Analyze context around links]
+    E3 --> G
+    
+    B -->|Questionable Ad| F[Ad Analysis]
+    F --> F1[Evaluate emotional/sensational content]
+    F1 --> F2[Check third-party apps]
+    F2 --> G
+    
+    G{Confirmed Scam?}
+    
+    G -->|Yes| H[Preventive Measures]
+    H --> H1[Report to social media platform]
+    H1 --> H2[Block suspicious accounts]
+    H2 --> H3[Update privacy settings]
+    H3 --> H4[Clear browsing history]
+    H4 --> H5[Enable two-factor authentication]
+    H5 --> H6[Change to strong passwords]
+    H6 --> J
+    
+    G -->|No| I[Continue Monitoring]
+    I --> I1[Stay informed about new scams]
+    I1 --> I2[Regularly check security software]
+    I2 --> J
+    
+    J[Maintain Continuous Vigilance]
